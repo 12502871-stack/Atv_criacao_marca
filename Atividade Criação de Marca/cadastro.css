@@ -1,0 +1,151 @@
+* {
+    margin: 0%;
+    font-family:'Poppins', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/PlanoFundo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*=============================================    CABEÇALHO    =============================================*/
+header {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 5%;
+    padding-top: 2%;
+    padding-bottom: 0;
+    background-image: url("images/bgHeader.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 10px;
+}
+#logo {
+    width: 10%;
+    height: 100%;
+}
+#logo img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: #000 solid 1px;
+    box-shadow: 2px 2px 2px;
+}
+#naoLogo {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#naoLogo section {
+    width: 70%;
+    height: 30%;
+    background-color: white;
+    margin-top: 3%;
+    margin-left: 15%;
+}
+#naoLogo section ul {
+    margin-right: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#naoLogo section ul li{
+    list-style: none;
+}
+#naoLogo section ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+#naoLogo section ul li #pagAtual {
+    color: #FF3B00;
+}
+#naoLogo section ul li a:hover{
+    color: #FF3B00;
+    transition: 0.5s;
+}
+#barraPesquisa {
+    width: 100%;
+    height: 30%;
+    position: relative;
+}
+#barraPesquisa input {
+    width: 100%;
+    height: 100%;
+    font-size: 3em;
+    font-weight: 700;
+}
+#barraPesquisa input::placeholder {
+    font-size: 1em;
+    font-weight: 700;
+    text-align: start;
+}
+#barraPesquisa img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 1%;
+    bottom: 5px;
+}
+
+/*=================================================    PARTE PRINCIPAL    =================================================*/
+#sec01 {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7%;
+    padding-bottom: 2%;
+    padding-top: 1%;
+}
+#container {
+    width: 100%;
+    height: 100%;
+    background: #36849C;
+    padding: 1%;
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.formulario {
+    width: 35%;
+    height: 100%;
+    background: #595959;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid: repeat(4, 1fr) 2fr / 100%;
+    padding: 2%;
+    padding-bottom: 3%;
+    padding-top: 1%;
+}
+
+.formulario input {
+    width: 100%;
+    height: 70%;
+    font-size: 1.7em;
+    font-weight: 580;
+}
+
+.formulario button {
+    width: 50%;
+    height: 30%;
+    justify-self: end;
+    align-self: end;
+    font-size: 1.7em;
+    font-weight: 700;
+    color: #565656;
+}
